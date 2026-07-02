@@ -1,0 +1,60 @@
+{
+  "patients": [
+    {
+      "id": "P001",
+      "first_name": "Amit",
+      "last_name": "Sharma",
+      "age": 35,
+      "gender": "Male",
+      "bmi":"22",
+      "phone": "+91-9876543210",
+      "email": "amit.sharma@example.com",
+      "address": {
+        "street": "123 Civil Lines",
+        "city": "Prayagraj",
+        "state": "Uttar Pradesh",
+        "zip": "211001"
+      },
+      "medical_history": [
+        "Diabetes",
+        "Hypertension"
+      ],
+      "allergies": [
+        "Penicillin"
+      ],
+      "current_medications": [
+        "Metformin",
+        "Amlodipine"
+      ],
+      "emergency_contact": {
+        "name": "Rohit Sharma",
+        "relation": "Brother",
+        "phone": "+91-9123456780"
+      }
+    },
+    {
+      "id": "P002",
+      "first_name": "Neha",
+      "last_name": "Verma",
+      "age": 28,
+      "gender": "Female",
+      "bmi":"11",
+      "phone": "+91-9988776655",
+      "email": "neha.verma@example.com",
+      "address": {
+        "street": "45 MG Road",
+        "city": "Lucknow",
+        "state": "Uttar Pradesh",
+        "zip": "226001"
+      },
+      "medical_history": [],
+      "allergies": [],
+      "current_medications": [],
+      "emergency_contact": {
+        "name": "Suresh Verma",
+        "relation": "Father",
+        "phone": "+91-9001122334"
+      }
+    }
+  ]
+}
