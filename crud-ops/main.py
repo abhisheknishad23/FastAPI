@@ -35,3 +35,17 @@ def update(todo_id:int, updated:Todo):
     for index, todo in enumerate(todo_list):
         if todo.id == todo_id:
             todo_list[index] = updated
+            return{
+                "message":"Data update",
+                "data": updated
+            }
+    return {"error":"not found"}
+
+@app.delete("/todo/{todo_id}")
+def delete_todo(todo_id:int):
+    for index, todo in enumerate(todo_list):
+        if todo.id == todo_id:
+            todo_list.pop(index)
+            return {
+                "message":"Data deleted"
+            }
