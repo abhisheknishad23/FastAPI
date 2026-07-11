@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, Depends, Header
 from jose import jwt 
 from datetime import datetime, timedelta, timezone
 
+
 app = FastAPI()
 
 seceret_key = 'cLaude'
