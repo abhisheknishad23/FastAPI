@@ -1,3 +1,5 @@
+#authentication basic
+
 from fastapi import FastAPI, HTTPException, Depends, Header
 from pydantic import BaseModel
 from jose import jwt 
@@ -9,6 +11,7 @@ app = FastAPI()
 seceret_key = 'cLaude'
 algo = "HS256"
 
+#create token
 def create_token(data: dict):
     to_encode = data.copy()
     expire = datetime.now(timezone.utc)+timedelta(minutes=30)
@@ -53,3 +56,4 @@ def secure_data(user = Depends(varify_token)):
         "message":"Secure Data Access",
         "user":user
     }
+    
